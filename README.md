@@ -1,0 +1,1 @@
+Update this object so that each step has the name of a committee member associated with it (i.e. by adding an additional person property in each step object), and each committee member has an equal number of tasks. Avoid typing out the committee members' names elsewhere in your code.
