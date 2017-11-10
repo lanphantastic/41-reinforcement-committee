@@ -34,5 +34,9 @@ project = {
   ]
 }
 
-tasksPerson = project["steps"].length/project["committee"].length
-console.log(tasksPerson);
+tasksPerPerson = project["steps"].length/project["committee"].length
+console.log(tasksPerPerson);
+
+projectMembers = project["committee"];
+
+console.log(projectMembers);
