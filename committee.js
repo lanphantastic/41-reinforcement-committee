@@ -34,9 +34,25 @@ project = {
   ]
 }
 
+// Determining how many tasks each person should have
 tasksPerPerson = project["steps"].length/project["committee"].length
 console.log(tasksPerPerson);
 
+// Access the committee members
 projectMembers = project["committee"];
 
 console.log(projectMembers);
+
+var counter = 0;
+
+// assigned each member to three tasks
+project["steps"].map(function(step) {
+  step["assignedPerson"] = projectMembers[counter];
+  counter++;
+  if (counter > projectMembers.length) {
+    counter = 0;
+  };
+});
+
+// Show the new project list
+console.log(project);
