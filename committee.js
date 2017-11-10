@@ -33,3 +33,6 @@ project = {
     }
   ]
 }
+
+tasksPerson = project["steps"].length/project["committee"].length
+console.log(tasksPerson);
